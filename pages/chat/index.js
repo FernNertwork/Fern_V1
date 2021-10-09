@@ -1,5 +1,6 @@
 import Header from '../../components/Header'
 import LeftBar from '../../components/LeftBar'
+import Network from '../../components/Network'
 
 const index = () => {
     return (
@@ -12,9 +13,10 @@ const index = () => {
         <LeftBar/>
 
         {/* Middle Section */}
+        <Network />  
         
 
-        {/* Right Section */}
+      
       </main>
       
     </div>

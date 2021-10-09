@@ -6,7 +6,7 @@ import edwardAvatar from '../public/images/edward.jpg'
 import edwinAvatar from '../public/images/edwin.jpg'
 import einsteinAvatar from '../public/images/einstein.jpg'
 
-const RightBar = (isHome) => {
+const RightBar = () => {
     return (
         <div className='hidden lg:flex flex-col h-screen p-2 w-1/5 bg-white border-l-2 border-gray-200'>
             <div className='hidden md:inline-flex  items-center rounded-full bg-gray-100 p-2 mt-10 '>

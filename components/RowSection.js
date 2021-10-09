@@ -10,8 +10,6 @@ const RowSection = ({ Icon, title, page, active, ActiveIcon}) => {
                 {!active && Icon && <Icon className='h-8 w-8 text-fern-green-500' />}
                 {active && <ActiveIcon  className='h-8 w-8 text-fern-green-500'/>}
                 <p className={`${active ? "font-bold" : "font-medium" } hidden sm:inline-flex text-fern-green-500`}>{title}</p>
-
-            
             </div>
         </Link>
     )

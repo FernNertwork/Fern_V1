@@ -6,10 +6,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@heroicons/react": "^1.0.1",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.2",
+    "@mui/styled-engine-sc": "^5.0.0",
+    "@pdftron/webviewer": "^8.1.0",
+    "firebase": "^9.1.0",
+    "luxon": "^2.0.2",
+    "moment": "^2.29.1",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@heroicons/react": "^1.0.1"
+    "react-firebase-hooks": "^3.0.4",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

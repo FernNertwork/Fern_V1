@@ -6,10 +6,12 @@ import {
 
 import Image from 'next/image'
 import avatar from '../public/fern_logo.png'
+import moment from "moment";
 
 
-
-const GeneralPost = ({name, message, postImage}) => {
+const GeneralPost = ({ name, message, postImage, timestamp }) => {
+  
+    
     return (
         <div className='flex flex-col'>
             <div className='p-5 bg-white mt-5 rounded-t-2xl shadow-xl'>
@@ -23,17 +25,18 @@ const GeneralPost = ({name, message, postImage}) => {
                     <div>
                         <p className='text-base text-gray-800 font-semibold cursor-pointer'> {name} </p>
 
-                        {/* {timestamp ? (
-                            <p className="text-xs text-gray-400">
-                                {new Date(timestamp?.toDate()).toLocaleString()}
-                            </p>
-                        ) : (
-                            <p className="text-xs text-gray-400">Loading</p>
-                        )} */}
+                        
 
                     </div>
                     <div>
-                        <p className='text-xs text-gray-400'>6:57PM</p>
+                        {timestamp ? (
+                               
+                            <p className="text-xs text-gray-400">
+                                {moment(timestamp?.toDate()).fromNow()}
+                            </p>
+                        ) : (
+                            <p className="text-xs text-gray-400">...</p>
+                        )}
                     </div>
                 </div>
                 <p className='pt-4'>{ message }</p>

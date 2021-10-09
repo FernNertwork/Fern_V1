@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import LeftBar from '../../components/LeftBar'
 import RightBar from '../../components/RightBar'
+import Profile from '../../components/Profile'
 
 const index = () => {
     return (
@@ -13,10 +14,10 @@ const index = () => {
                 <LeftBar/>
 
                 {/* Middle Section */}
-                
+                <Profile />
 
                 {/* Right Section */}
-                {/* <RightBar isHome=true/> */}
+                <RightBar />
             </main>
         
         </div>
